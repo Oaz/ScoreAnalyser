@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.IO;
+﻿using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using ReactiveUI;
 
 namespace ScoreAnalyser.ViewModels
 {
-  public class DominantToolboxViewModel : HarmonicFunctionToolboxViewModel
-  {
-    public DominantToolboxViewModel()
+    public class DominantToolboxViewModel : MusicItemToolboxViewModel
     {
-      Dominants = new ObservableCollection<DominantViewModel>(FindFiles("/Assets/png/dominant/").Select(f => new DominantViewModel(f)));
-    }
+        public DominantToolboxViewModel(DragAndDropContext dragAndDropContext)
+        {
+            Dominants = new ObservableCollection<MusicItemViewModel>(FindFiles("/Assets/png/dominant/")
+                .Select(f => new MusicItemViewModel(f, dragAndDropContext)));
+        }
 
-    public ObservableCollection<DominantViewModel> Dominants { get; }
-  }
+        public ObservableCollection<MusicItemViewModel> Dominants { get; }
+    }
 }

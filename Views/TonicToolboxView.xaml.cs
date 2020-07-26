@@ -1,11 +1,12 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
+using ScoreAnalyser.ViewModels;
 
 namespace ScoreAnalyser.Views
 {
-    public class DominantToolboxView : UserControl
+    public class TonicToolboxView : UserControl
     {
-        public DominantToolboxView()
+        public TonicToolboxView()
         {
             InitializeComponent();
         }

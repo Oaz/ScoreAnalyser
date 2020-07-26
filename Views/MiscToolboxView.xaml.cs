@@ -1,11 +1,12 @@
+using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
 namespace ScoreAnalyser.Views
 {
-    public class DominantToolboxView : UserControl
+    public class MiscToolboxView : UserControl
     {
-        public DominantToolboxView()
+        public MiscToolboxView()
         {
             InitializeComponent();
         }

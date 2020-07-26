@@ -3,9 +3,9 @@ using Avalonia.Markup.Xaml;
 
 namespace ScoreAnalyser.Views
 {
-    public class DominantToolboxView : UserControl
+    public class PredominantToolboxView : UserControl
     {
-        public DominantToolboxView()
+        public PredominantToolboxView()
         {
             InitializeComponent();
         }
